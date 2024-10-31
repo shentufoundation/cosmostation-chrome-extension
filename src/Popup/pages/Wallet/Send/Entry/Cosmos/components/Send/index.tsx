@@ -268,7 +268,7 @@ export default function Send({ chain }: CosmosProps) {
           memo: currentMemo,
           msgs: [
             {
-              type: chain.chainName === SHENTU.chainName ? 'bank/MsgSend' : 'cosmos-sdk/MsgSend',
+              type: 'cosmos-sdk/MsgSend',
               value: {
                 from_address: address,
                 to_address: currentDepositAddress,
